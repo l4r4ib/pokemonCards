@@ -14,7 +14,12 @@ const colors = {
 	psychic: '#f85888',
 	flying: '#A98FF3',
 	fighting: '#c03028',
-	normal: '#a8a878'
+	normal: '#a8a878',
+	ghost: '#735797',
+        dragon : '#6F35FC',
+	dark : '#705746',
+	steel : '#B7B7CE',
+	fairy : '#D685AD'
 };
 
 
@@ -48,9 +53,9 @@ function createPokemonCard(pokemon) {
 
 	const pokeInnerHTML = `
         <div class="img-container">
-            <img src="https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${
 							pokemon.id
-						}.svg" alt="${name}" />
+						}.png" alt="${name}" />
         </div>
         <div class="info">
             <span class="number">${pokemon.id.toString().padStart(3, '0')}</span>
